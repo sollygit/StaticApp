@@ -3,28 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TestDome Javascript Answers</title>
+    <title>Dome Test</title>
     <link rel="stylesheet" href="../styles.css">
     <script type="text/javascript" src="dome.js"></script>
 </head>
 
 <body onload="load()">
-    <h3>Dome Tester</h3>
+    <h3>Dome Test</h3>
     <div class="home">
         <a href="../index.html">Home</a>
     </div>
-    <div class="image">
-        <img src="../images/one.jpg" alt="First">
+    <div id="one" class="image">
+        <img src="../images/one.jpg" alt="One">
         <button class="remove">X</button>
     </div>
-    <div class="image">
-        <img src="../images/two.jpg" alt="Second">
+    <div id="two" class="image">
+        <img src="../images/two.jpg" alt="Two">
         <button class="remove">X</button>
     </div>
     <div class="engines">
         <a href="//www.yahoo.com">Yahoo!</a><br />
         <a href="//www.altavista.com">AltaVista</a><br />
         <a href="//www.google.com">Google</a><br />
+    </div>
+    <div>
+        <button onclick="getTime()">Time</button>
+        <div id="time" class="timer"></div>
     </div>
 </body>
 

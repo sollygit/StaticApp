@@ -1,4 +1,5 @@
-var Module = (function() {
+var Functions = (function () {
+    
     // private
     function average(a, b) {
         return (a + b) / 2.0;
@@ -6,11 +7,8 @@ var Module = (function() {
 
     // public
     return {
-        Average: function(a, b) {
+        Average: function (a, b) {
             return average(a, b);
-        },
-        GetTime: function () {
-            return Date();
         }
     };
 

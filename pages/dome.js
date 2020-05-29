@@ -1,23 +1,40 @@
 
+// addEventListener
+setTimeout(function () {
+    var allDivs = document.getElementsByClassName("image");
+    for (var i = 0; i < allDivs.length; i++) {
+        allDivs[i].addEventListener('click', function () {
+            var img = document.createElement('img');
+            img.src = `../images/${this.id}.jpg`;
+            this.insertBefore(img, this.firstChild);
+        }, false);
+    }
+}, 1000);
+
 function load() {
     setup();
     registerHandlers();
-}
-
-// Remove Property
-function removeProperty(obj, prop) {
-    if (obj.hasOwnProperty(prop)) {
-        delete obj[prop];
-    }
 }
 
 // Image Gallery
 function setup() {
     var elm = document.getElementsByClassName("remove");
     for (var i = 0; i < elm.length; i++) {
-        elm[i].addEventListener('click', function () {
-            this.parentNode.parentNode.removeChild(this.parentNode);
-
+        elm[i].addEventListener('click', function () {            
+            if (this.parentNode.childElementCount == 2)
+            {
+                // Remove image div
+                this.parentNode.parentNode.removeChild(this.parentNode);
+            }
+            else
+            {
+                // Remove the first image in div
+                this.parentNode.removeChild(this.parentNode.childNodes[0]);
+                // Prevents the image click event to fire
+                event.stopPropagation();
+            }
+            
+            
         }, false);
     }
 }
@@ -39,16 +56,6 @@ function registerHandlers() {
     }
 }
 
-// Loops
-function appendChildren() {
-    var allDivs = document.getElementsByTagName("div");
-    console.log(allDivs);
-    
-    // make a copy - if you don't, you are adding to a live array which will cause an infinite loop
-    allDivs = [].slice.call(allDivs, 0);
-    
-    for (var i = 0; i < allDivs.length; i++) {
-        var elm = document.createElement("input");
-        allDivs[i].appendChild(elm);
-    }
+function getTime() {
+    document.getElementById('time').innerHTML = new Date();
 }

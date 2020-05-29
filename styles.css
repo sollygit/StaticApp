@@ -2,20 +2,20 @@
 .home {
     margin-bottom: 20px;
 }
-
 .timer {
     font-size: small;
+}
+.image img {
+    cursor: pointer;
 }
 .engines {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 .engines a {
     text-transform: uppercase;
     text-decoration: none;
 }
-
 .engines a:link {
     content: "> " string " <";
 }
