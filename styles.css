@@ -1,15 +1,12 @@
-
-.home {
-    margin-bottom: 20px;
-}
-a:link {
+a {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
+.home {
+    margin-bottom: 20px;
+}
 .timer {
     font-size: small;
 }
@@ -21,9 +18,6 @@ a:hover {
     margin-bottom: 20px;
 }
 .engines a {
+    margin: 0 10px;
     text-transform: uppercase;
-    text-decoration: none;
-}
-.engines a:link {
-    content: "> " string " <";
 }
