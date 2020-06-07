@@ -2,6 +2,14 @@
 .home {
     margin-bottom: 20px;
 }
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .timer {
     font-size: small;
 }
