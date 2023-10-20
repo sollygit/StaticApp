@@ -1,0 +1,20 @@
+  Hi {{customerId}},
+  {{#if fulfilmentType.delivery}}
+  Order {{orderNo}} to {{address1}} {{address2}}.
+  Your delivery is scheduled on {{requestDate}} {{dsp.text}}.
+  {{branchName}}.
+  {{/if}}
+  {{#if fulfilmentType.collect}}
+  Order {{orderNo}} ETA {{requestDate}} {{time}}.
+  Thank you for your order, we will be in contact when ready.
+  {{branchName}}.
+  {{/if}}
+  {{#if fulfilmentType.collection}}
+  Order {{orderNo}} ETA {{requestDate}} {{time}}.
+  Thank you for your order, we will be in contact when ready.
+  {{branchName}}.
+  {{/if}}
+
+  <br>
+  <br>
+  <a href="../index.html">← Back</a>

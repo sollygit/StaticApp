@@ -1,0 +1,41 @@
+{
+  "transactionId": "12345",
+  "branchId": 362,
+  "branchName": "PlaceMakers Thames",
+  "phoneNo": "(09) 815 6800",
+  "address1": "547-557 Don Buck Road Massey",
+  "address2": "Auckland",
+  "orderNo": "123456",
+  "customerId": "John Doe",
+  "customerEmail":"postsolly@gmail.com",
+  "customerMobile":"0225383745",
+  "notificationType": "Order Confirmation",
+  "fulfilmentType": {
+    "delivery": true
+  },
+  "notificationMethod": "Email",
+  "requestDate": "20/01/2020",
+  "orderLocation": "Location in NZ",
+  "dsp": {
+  	"text": "Specific Time",
+  	"specificTime": true
+  },
+  "eta": "20/01/2020",
+  "time": "10:05",
+  "products": [
+    {
+      "productId": "2800027",
+      "description": "100 X 50 Product",
+      "orderQuantity": 10.45,
+      "uom": "LM",
+      "price": 84.95
+    },
+    {
+      "productId": "3200029",
+      "description": "Standard Gib",
+      "orderQuantity": 12.50,
+      "uom": "Sh",
+      "price": 85.00
+    }
+  ]
+}
