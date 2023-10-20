@@ -7,8 +7,8 @@
   "address2": "Auckland",
   "orderNo": "123456",
   "customerId": "John Doe",
-  "customerEmail":"postsolly@gmail.com",
-  "customerMobile":"0225383745",
+  "customerEmail":"post2me@gmail.com",
+  "customerMobile":"0225383744",
   "notificationType": "Order Confirmation",
   "fulfilmentType": {
     "delivery": true

@@ -14,7 +14,3 @@
   Thank you for your order, we will be in contact when ready.
   {{branchName}}.
   {{/if}}
-
-  <br>
-  <br>
-  <a href="../index.html">← Back</a>
